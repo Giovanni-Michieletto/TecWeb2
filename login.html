@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>Dolci in Campagna</title>
+   <meta name="title" content="Dolci in campagna"/>
+   <meta name="dexcription" content="raccolta di ricette per dolci di tutti i generi"/>
+   <!-- da aggiungere o modificare le keyword a piacimento -->
+   <meta name="keyword" content="dolci, ricette, torte, creme, torte in forno, ingredienti "/>
+   <meta name="author" content="gruppo TecWeb" />
+   <meta name="language" content="italian it" />
+
+   <!-- link css -->
+
+</head>
+<body>
+   <div class="header">
+      <img src="./public/img/logo.jpeg" alt="">
+      <h1>Dolci in Campagna</h1>
+   </div>
+   <div class="percorso">
+      <div id="space">
+         <p>Ti trovi in: <percorso/> </p>
+      </div>
+   </div>
+   <div class="menu">
+      <ul class="links">
+         <li><a href="./index.html">Home</a> </li>
+         <li><a href="#">Dolci in Forno</a></li>
+         <li><a href="#">Freddi</a> </li>
+         <li><a href="#">Creme</a> </li>
+         <li><a href="#">Biscotti</a> </li>
+      </ul>
+   </div>
+   <div class="spacer-top"></div>
+
+   <div id="container-login" class="container-amministration margin-5">
+      <strong>Inserire utente e password</strong>
+      <form enctype="multipart/form-data" method="post" action="login.php">
+         <fieldset class="align">
+            <div class="title-amministration">
+               <img src="./db/img/deco.svg" alt=""/>
+               <label for="Username"><span xml:lang="en">Username*</span>: </label>
+            </div>
+            <div class="text-box">
+               <span>
+                  <input type="text" id="Username" name="Username"/>
+               </span>
+            </div>
+         </fieldset>
+         <fieldset class="align">
+            <div class="title-amministration">
+               <img src="./db/img/deco.svg" alt=""/>
+               <label for="Password"><span xml:lang="en">Password*</span>: </label>
+            </div>
+            <div class="text-box">
+               <span>
+                  <input type="password" name="Password" id="Password"/>
+               </span>
+            </div>
+         </fieldset>
+         <fieldset class="button-aggiungi">
+            <button class="aggiungi" type="submit" name="submit">Invia</button>
+         </fieldset>
+      </form>
+   </div>
+
+</body>
+</html>
