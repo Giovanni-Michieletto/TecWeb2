@@ -9,9 +9,9 @@ body{
 	
 }
 body::-webkit-scrollbar {
-	height: 7px;
-   width: 7px;
-	}
+	height: 5px;
+   width: 5px;
+}
 
 /* body::-webkit-scrollbar {
 	height: 4px;
@@ -23,13 +23,18 @@ body::-webkit-scrollbar {
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
+   box-shadow: inset 0px 0px #01B8BD;
 }
 body::-webkit-scrollbar-corner {
 	background:#035659;
 }
 body::-webkit-scrollbar-track{
-   width: 0px;
+   background: #fff;
    border: 0;
+   /* box-shadow: inset 7px 10px 12px ; */
+}
+::-webkit-progress-bar{
+   width: 0;
 }
 
 .spacer-top{
