@@ -398,7 +398,32 @@ p{
 	font-size: 1.3em;
 }
 
+/* .chef{
+   display: flex;
 
+} */
+.chef h2, .chef h3{
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   color:darksalmon;
+}
+
+.foto-martina{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+
+}
+.foto-martina img{
+   width: 40%;
+   border-radius: 10px;
+   margin: 1em 0;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
 /* fare class absolute */
 /* ============================ */
 /* ============MOBILE========== */
