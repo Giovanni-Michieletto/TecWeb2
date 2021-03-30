@@ -207,6 +207,9 @@ p{
 .links2 a p{
    padding: 0.3em;
 }
+.not-link p{
+   padding: 0.3em;
+}
 .links2 a img{
    width: 10em;
    height: 7em;
@@ -497,6 +500,12 @@ footer {
    .not-link{
       min-width: 150px;
    }
+   .not-link p{
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 0.5em;
+      letter-spacing: 0.1em;
+   }
    .links2{
       min-width: 150px;
    }
@@ -506,7 +515,7 @@ footer {
       padding: 0.5em;
       letter-spacing: 0.1em;
    }
-   .links2 a img{
+   .links2 a img , .not-link img{
       display: none;
    }
    .esempio{
@@ -583,13 +592,14 @@ footer {
    .not-link{
       padding: 0.1em;
    }
+   
    .links2{
       padding: 0.1em;
    }
    .links2 a img{
       display: flex;
    }
-   .links2 a p{
+   .links2 a p , .not-link p{
       font-weight:normal;
    }
    .esempio{
