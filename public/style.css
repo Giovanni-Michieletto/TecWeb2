@@ -463,17 +463,16 @@ footer {
    .logo-home{
       display: none;
    }
-   .card-container{
+    .card-container{
       grid-template-columns: auto;
       justify-content: center;
    }
-
+   
    .card {
-      transition: width 0.3s ease-in-out;
       width: 17em;
       min-width: 230px;
       margin-bottom: 2rem;
-      height: 17em;
+      height: 32em;
       border: 2px solid #ccc;
       border-radius: 10px;
       background-color: white;
@@ -483,28 +482,31 @@ footer {
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
    }
+   
    .card a{
       text-decoration: none;
       color: black;
    }
-   
+   .card-info-container{
+      display: flex;
+      flex-direction: column;
+   }
    .card-title {
-      border-radius: 5px 5px 0 0;
+      border-radius: 10% 10% 0 0;
       padding: 0.7rem;
-      height: 1.5em;
+      height: 2.5em;
       width: 100%;
       display: flex;
       align-items: center;
       vertical-align: middle;
-      -webkit-border-radius: 0 0 5px 5px;
-      -moz-border-radius: 0 0 5px 5px;
-      -ms-border-radius: 0 0 5px 5px;
-      -o-border-radius: 0 0 5px 5px;
-   }
+      -webkit-border-radius: 10% 10% 0 0;
+      -moz-border-radius: 10% 10% 0 0;
+      -ms-border-radius: 10% 10% 0 0;
+      -o-border-radius: 10% 10% 0 0;
+}
    .card-title h3{
-      font-size: medium;
-       font-weight: bold;
-      text-decoration: none;
+      font-size: 1.2em;
+      margin-left: 0.2em;
    }
    .card-title a:hover {
       color: #009b9f;
@@ -514,12 +516,31 @@ footer {
       height: 12em;
       overflow: hidden;
    }
-   .card-img img {
+   .card img {
       width: 100%;
-      object-fit: cover;
-      /* padding: 0 0.2em */
+      /* object-fit: cover; */
+   }
+   .card-footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
    }
    .info{
+      padding: 0.3em;
+      margin-left: 1em;
+   }
+   .info p{
+      padding: 0;
+   }
+   .tempo{
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+   }
+   .tempo p{
+      padding:0 0 0 0.2em;
+   }
+   /* .info{
       display: flex;
       justify-content: space-between;
       text-align: end;
@@ -534,7 +555,7 @@ footer {
    }
    .tempo p{
       padding:0 0 0 0.2em;
-   }
+   }  */
    /* .contatti{
       width: 50%;
    } */
@@ -616,7 +637,9 @@ footer {
       display: inline;
    }
    .card-container{
-      grid-template-columns: auto auto;
+      display: flex;
+      flex-wrap: wrap;
+
       justify-content: space-evenly;
    }
 
@@ -674,15 +697,21 @@ footer {
    .links2{
       padding: 1em 0.5em;
 	}
-   .card-container{
-      grid-template-columns: auto auto auto;
-      justify-content: space-evenly;
-   }
+   
    /* .header h1{
       margin-right: 30%;
    } */
-   .card-desktop{
-      margin: 1em 0;
+
+   
+   .card-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .card{
+      width: 90%;
+      height: 100%;
       border: 2px solid #ccc;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -691,23 +720,23 @@ footer {
       -o-border-radius: 10px;
    }
    
-   .card-desktop:hover h3,
-   .card-desktop:hover .info,
-   .card-desktop:hover .tempo{
+   .card:hover h3,
+   .card:hover .info,
+   .card:hover .tempo{
       color:indianred;
    }
    
-   .card-desktop a{
+   .card a{
       display: flex;
       text-decoration: none;
       color: black;
    }
-   .card-img-desktop{
+   .card-img{
       display: flex;
       width: 50%;
       height: 50%;  
    }
-   .card-desktop img{
+   .card img{
       width: 40%;
       min-width: 300px;
       border-radius: 10px 0 0 10px;
@@ -720,12 +749,12 @@ footer {
       display: flex;
       flex-direction: column;
    }
-   .card-title-desktop{
+   .card-title{
       margin-top: 1em;
       display: flex;
       align-items: center;
    }
-   .card-title-desktop h3{
+   .card-title h3{
       font-size: 1.5em;
       margin-left: 1em;
    }
@@ -736,7 +765,6 @@ footer {
       bottom: 1em;
    }
    .info{
-      /* width: 20%; */
       font-weight: bold;
    }
    .tempo{
