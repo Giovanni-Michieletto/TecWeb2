@@ -266,73 +266,7 @@ p{
 
 
 
-.card {
-	transition: width 0.3s ease-in-out;
-	width: 17em;
-	min-width: 230px;
-	margin-bottom: 2rem;
-	height: 17em;
-	border: 2px solid #ccc;
-	border-radius: 10px;
-	background-color: white;
-	overflow: hidden;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-}
-.card a{
-	text-decoration: none;
-	color: black;
-}
 
-.card-title {
-	border-radius: 5px 5px 0 0;
-	padding: 0.7rem;
-	height: 1.5em;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	vertical-align: middle;
-	-webkit-border-radius: 0 0 5px 5px;
-	-moz-border-radius: 0 0 5px 5px;
-	-ms-border-radius: 0 0 5px 5px;
-	-o-border-radius: 0 0 5px 5px;
-}
-.card-title h3{
-	font-size: medium;
-	 font-weight: bold;
-	text-decoration: none;
-}
-.card-title a:hover {
-	color: #009b9f;
-}
-.card-img {
-	width: 100%;
-	height: 12em;
-	overflow: hidden;
-}
-.card-img img {
-	width: 100%;
-	object-fit: cover;
-	/* padding: 0 0.2em */
-}
-.info{
-   display: flex;
-   justify-content: space-between;
-   text-align: end;
-   padding: 1em;
-}
-.info p{
-   padding: 0;
-}
-.tempo{
-   display: flex;
-   align-items: center;
-}
-.tempo p{
-   padding:0 0 0 0.2em;
-}
 .card:hover h3{
    color: #A92322;
 }
@@ -532,6 +466,74 @@ footer {
    .card-container{
       grid-template-columns: auto;
       justify-content: center;
+   }
+
+   .card {
+      transition: width 0.3s ease-in-out;
+      width: 17em;
+      min-width: 230px;
+      margin-bottom: 2rem;
+      height: 17em;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      overflow: hidden;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+   }
+   .card a{
+      text-decoration: none;
+      color: black;
+   }
+   
+   .card-title {
+      border-radius: 5px 5px 0 0;
+      padding: 0.7rem;
+      height: 1.5em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      -webkit-border-radius: 0 0 5px 5px;
+      -moz-border-radius: 0 0 5px 5px;
+      -ms-border-radius: 0 0 5px 5px;
+      -o-border-radius: 0 0 5px 5px;
+   }
+   .card-title h3{
+      font-size: medium;
+       font-weight: bold;
+      text-decoration: none;
+   }
+   .card-title a:hover {
+      color: #009b9f;
+   }
+   .card-img {
+      width: 100%;
+      height: 12em;
+      overflow: hidden;
+   }
+   .card-img img {
+      width: 100%;
+      object-fit: cover;
+      /* padding: 0 0.2em */
+   }
+   .info{
+      display: flex;
+      justify-content: space-between;
+      text-align: end;
+      padding: 1em;
+   }
+   .info p{
+      padding: 0;
+   }
+   .tempo{
+      display: flex;
+      align-items: center;
+   }
+   .tempo p{
+      padding:0 0 0 0.2em;
    }
    /* .contatti{
       width: 50%;

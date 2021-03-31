@@ -5,5 +5,13 @@
 // )
 
 function Tornasu(){
-   $("html, body").animate({ scrollTop: 0 }, "slow");
+   setTimeout(  
+      function(){
+         $("html, body").animate({ scrollTop: 0}, "slow")
+      },170
+   );
+
 }
+// function Tornasu(){
+//    $("html, body").animate({scrollTop: 0}, { duration: 2000}, 'easeout');
+// }
