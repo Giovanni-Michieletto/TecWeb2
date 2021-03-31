@@ -472,7 +472,7 @@ footer {
       width: 17em;
       min-width: 230px;
       margin-bottom: 2rem;
-      height: 32em;
+      height: 23em;
       border: 2px solid #ccc;
       border-radius: 10px;
       background-color: white;
@@ -520,6 +520,19 @@ footer {
       width: 100%;
       /* object-fit: cover; */
    }
+   .card-info p{
+      padding: 0;
+      margin:0 0.6em 1em 0.6em;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+   }
+   .card-info{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
    .card-footer{
       display: flex;
       flex-direction: row;
@@ -527,7 +540,7 @@ footer {
    }
    .info{
       padding: 0.3em;
-      margin-left: 1em;
+      margin-left: 0.5em;
    }
    .info p{
       padding: 0;
