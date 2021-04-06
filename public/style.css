@@ -232,15 +232,7 @@ p{
    vertical-align: middle;
    align-items: center;
 }
-.esempio{
-   width: 20%;
-   height: 15%;
-   border-radius: 5%;
-   -webkit-border-radius: 5%;
-   -moz-border-radius: 5%;
-   -ms-border-radius: 5%;
-   -o-border-radius: 5%;
-}
+
 .logo-home{
    width: 30%;
 }
@@ -462,11 +454,23 @@ footer {
    .links2 a img , .not-link img{
       display: none;
    }
-   .esempio{
+   /* .esempio{
       display: none;
-   }
+   } */
    .logo-home{
       display: none;
+   }
+   .image-container{
+      flex-direction: column;
+   }
+   .esempio{
+      width: 70%;
+      margin: 0.5em;
+      border-radius: 5%;
+      -webkit-border-radius: 5%;
+      -moz-border-radius: 5%;
+      -ms-border-radius: 5%;
+      -o-border-radius: 5%;
    }
     .card-container{
       grid-template-columns: auto;
@@ -589,7 +593,7 @@ footer {
    .contatti-container article img{
       width: 20%;
       height: 20%;
-      max-width: 200px;
+      max-width: 150px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -653,11 +657,19 @@ footer {
    .links2 a p , .not-link p{
       font-weight:normal;
    }
-   .esempio{
-      display: inline;
-   }
+   
    .logo-home{
       display: inline;
+   }
+   .image-container{
+      flex-direction: row;
+   }
+   .esempio{
+      margin: 0;
+      display: inline;
+      width: 25%;
+      height: 15%;
+     
    }
    .card-container{
       flex-direction: column;
@@ -741,7 +753,6 @@ footer {
       width: 20%;
       height: 20%;
       border-radius: 50%;
-      max-width: 300px;
       margin: 0 3em;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
