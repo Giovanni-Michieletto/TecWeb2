@@ -6,12 +6,11 @@
     $connection = $dbAccess->openDBConnection(); 
     if($connection)  {
         $list = $dbAccess->getFile();  
-        $definition = "";
         if ($list) {        
             foreach ($list as $cell) {
                 $anteprima = substr($cell['Testo'],0,250) . " ...";
-                $definition .= '<div class="card">';
-                    $definition .= '<a href="singolo.html?ID='.$cell['ID'].'">';
+                $definition = '<div class="card">';
+                    $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
                         $definition .=  '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">';
                         $definition .= '<div class="card-info-container">';
                             $definition .= '<div class="card-title">';
@@ -38,10 +37,7 @@
         else {
             $definition = '<p>Nessun file presente</p>';  
         } 
+        $page =  str_replace("<p>Errore di caricamento</p>",$definition,$page);
     }
-    else {
-        $definition = '<strong>Errore di collegamento al database</strong>';
-    }
-    $page =  str_replace("<list />",$definition,$page);
     echo $page;
 ?>

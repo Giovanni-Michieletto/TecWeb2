@@ -43,6 +43,28 @@
             }
         }
 
+        public function getFileID($ID) {
+            $querySelect = "SELECT * FROM Ricette WHERE ID=".$ID;
+            $queryResult = mysqli_query($this->connection, $querySelect);
+            if (!$queryResult || mysqli_num_rows($queryResult)==0) {
+                return null;
+            }
+            else {
+                $queryResult = mysqli_fetch_array($queryResult);
+                $cell = array(
+                    "ID" => $queryResult["ID"],
+                    "Nome" => $queryResult["Nome"],
+                    "Difficolta" => $queryResult["Difficolta"],
+                    "Tempo" => $queryResult["Tempo"],
+                    "Immagine" => $queryResult["Immagine"],
+                    "AltImmagine" => $queryResult["AltImmagine"],
+                    "Ingredienti" => $queryResult["Ingredienti"],
+                    "Testo" => $queryResult["Testo"],
+                );   
+                return $cell;
+            }
+        }
+
         //Funzione per l'inserimento dei dati
         public function insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo) {
             $table = "Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo)";
