@@ -6,10 +6,10 @@
     $connection = $dbAccess->openDBConnection(); 
     if($connection)  {
         $list = $dbAccess->getFile();  
-        if ($list) {        
+        if ($list) { 
             foreach ($list as $cell) {
                 $anteprima = substr($cell['Testo'],0,250) . " ...";
-                $definition = '<div class="card">';
+                $definition .= '<div class="card">';
                     $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
                         $definition .=  '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">';
                         $definition .= '<div class="card-info-container">';

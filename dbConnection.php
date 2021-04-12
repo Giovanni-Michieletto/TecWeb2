@@ -69,7 +69,7 @@
 
         //Funzione per l'inserimento dei dati
         public function insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag) {
-            $table = "Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo)";
+            $table = "Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo,Hashtag)";
             $value ="(\"$Nome\",\"$Difficolta\",\"$Tempo\",\"$Immagine\",\"$AltImmagine\",\"$Ingredienti\",\"$Testo\",\"$Hashtag\")";
             $queryInsert = "INSERT INTO $table VALUES $value";
             $queryResult = mysqli_query($this->connection,$queryInsert);

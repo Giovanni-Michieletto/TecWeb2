@@ -3,14 +3,14 @@
 --
 CREATE TABLE Ricette (
     ID int NOT NULL AUTO_INCREMENT,
-    Nome text NOT NULL,
-    Difficolta text NOT NULL,
-    Tempo text NOT NULL,
-    Immagine text NOT NULL,
+    Nome varchar(150) NOT NULL,
+    Difficolta varchar(50) NOT NULL,
+    Tempo varchar(50) NOT NULL,
+    Immagine varchar(50) NOT NULL,
     AltImmagine varchar(150) NOT NULL,
     Ingredienti text NOT NULL,
     Testo TEXT NOT NULL,
-    Hashtag TEXT NOT NULL,
+    Hashtag varchar(150) NOT NULL,
     PRIMARY KEY (ID)
 );
 

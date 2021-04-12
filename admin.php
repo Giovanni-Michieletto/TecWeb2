@@ -12,7 +12,7 @@
         if ($list) {        
             foreach ($list as $cell) {
                 $anteprima = substr($cell['Testo'],0,250) . " ...";
-                $definition = '<div class="card">';
+                $definition .= '<div class="card">';
                     $definition .=  '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">';
                     $definition .= '<div class="card-info-container">';
                         $definition .= '<div class="card-title">';
@@ -31,7 +31,7 @@
                             $definition .= '</div>';
                         $definition .= '</div>';
                     $definition .= '</div>';
-                    $definition .= '<a href="updateFile('.$cell['ID'].','.$cell['Nome'].','.$cell['Difficolta'].','.$cell['Tempo'].','.$cell['Immagine'].','.$cell['AltImmagine'].','.$cell['Ingredienti'].','.$cell['Testo'].','.$cell['Hashtag'].')">Modifica</a>';
+                    $definition .= '<a href="modify.php?ID='.$cell['ID'].'">Modifica</a>';
                     $definition .= '<a href="delete.php?ID='.$cell['ID'].'" />Elimina</a>';
                 $definition .= '</div>';
             }

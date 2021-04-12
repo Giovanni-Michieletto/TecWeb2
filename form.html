@@ -66,13 +66,56 @@
                     <i class="fas fa-utensils"></i>  <!-- cambiare immagine-->
                 </h2>
                 <h2 >      
-                    Amministrazione
-                    </h2>
+                    Nuova ricetta
+                </h2>
             </div>
-            <!-- CORPO RICETTE -->
-            <a href="form.html">Nuova ricetta</a>
+            <!-- CORPO FORM -->
             <div class="card-container">
-                <p>Errore di caricamento</p>
+                <form enctype="multipart/form-data" id="form" method="post" action="insert.php">
+                    <fieldset>
+                        <label for="Nome">Nome*: </label>
+                        <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" size="150" required/>  
+                    </fieldset>
+                    <fieldset>
+                        <label for="Difficolta">Difficoltà*: </label>
+                        <input type="text" id="Difficolta" name="Difficolta" placeholder="Difficoltà" title="Difficoltà della ricetta" pattern="[a-zA-Z]+.*" size="50" required/>  
+                    </fieldset>
+                    <fieldset>
+                        <label for="Tempo">Tempo*: </label>
+                        <input type="text" id="Tempo" name="Tempo" placeholder="Tempo" title="Tempo necessario per eseguire la ricetta" pattern="[a-zA-Z0-9]+.*" size="50"  required />  
+                    </fieldset>
+                    <fieldset> 
+                        <div>
+                            <label for="Immagine">Immagine*: </label>
+                            <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>
+                        </div>
+                        <div>
+                            <label for="AltImmagine">Descrizione immagine*:</label>
+                            <input type="text" id="AltImmagine" name="AltImmagine" placeholder="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" pattern="[a-zA-Z0-9]+.*" size="150" required/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="Ingredienti">Ingredienti*: </label>
+                            <textarea id="Ingredienti" name="Ingredienti" rows="30" cols="100" placeholder="Inserire gli ingredienti andando a capo per ognuno" title="Ingredienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="Testo">Testo*: </label>
+                            <textarea id="Testo" name="Testo" rows="30" cols="100" placeholder="Testo" title="Passaggi e procedienti della ricetta" pattern="[a-zA-Z0-9]+.*" size ="65 535" required></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="Hashtag">Hashtag*: </label>
+                            <input type="text" id="Hashtag" name="Hashtag" placeholder="Hashtag" title="Hashtag per facilitare la ricerca" pattern="[a-zA-Z0-9]+.*" size ="150" required/>
+                        </div>
+                    </fieldset>
+                    <fieldset class="button-conferma">
+                        <button id="bottone" type="submit">Submit</button>
+                    </fieldset>
+                </form>
             </div>
         </div>  
     </div>
@@ -88,9 +131,6 @@
                 <li>Telefono: +79394390273</li>
                 <li>E-mail: santamariadelcengio@mail.com</li>
             </ul>
-            <div id="login" >
-                <a href="logout.php">Logout</a>
-            </div>
             <p class="end-footer">Maria del Cengio - Comunità dei Servi di Maria</p>
         </div>
         <img id="img_validCSS" class="padding-05" src="./public/img/vcss-blue.gif" alt="Logo di validità Css" />
