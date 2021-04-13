@@ -11,7 +11,9 @@
                 $anteprima = substr($cell['Testo'],0,250) . " ...";
                 $definition .= '<div class="card">';
                     $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
+                        $definition .='<div class="card-img">';
                         $definition .=  '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">';
+                        $definition .= '</div>';
                         $definition .= '<div class="card-info-container">';
                             $definition .= '<div class="card-title">';
                                 $definition .= '<h3>'.$cell['Nome'].'</h3>';
