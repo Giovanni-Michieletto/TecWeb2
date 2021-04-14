@@ -65,7 +65,11 @@ body::-webkit-scrollbar-track{
    
 
 }
-
+.align{
+   display: flex;
+   justify-content: center;
+   align-items: cennter;
+}
 p{
    font-size: 1.1em;
 }
@@ -241,6 +245,66 @@ p{
    width: 30%;
 }
 
+/* ======================== */
+/* ==========LOGIN========= */
+/* ======================== */
+.title-amministration{
+	display: flex;
+	/* width: 30%; */
+	margin-bottom: 1em;
+}
+.title-amministration img{
+	width: auto;
+    height: 40px;
+}
+.title-amministration label{
+	font-size: 1.4em;
+	font-weight: 700;
+	/* display: inline-block; */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#container-login{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+}
+#container-login strong{
+   font-size: 1.5em;
+   margin: 1em 0;
+}
+.container form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+fieldset{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border: none;
+   margin: 0 0 0.5em 0;
+}
+input[type=text], input[type=password] {
+	width: 100%;
+	min-width: 13em;
+	font-family: sans-serif;
+	padding: 12px 20px;
+	/* margin: 0.8em 0; */
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+.conferma{
+   font-size: 1.2em;
+}
 /* ======================== */
 /* ===========CARD========= */
 /* ======================== */
