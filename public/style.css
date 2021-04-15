@@ -202,7 +202,6 @@ p{
 }
 
 .links2{
-   
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -346,10 +345,9 @@ input[type=text], input[type=password] {
    /* grid-template-columns: auto auto  auto; */
 }
 
-
-
-
-
+#article {
+   padding: 1em 3em 3em 3em;
+}
 
 
 
@@ -827,8 +825,7 @@ justify-content: center;
    }
    .links2 a p , .not-link p{
       letter-spacing: 0.1em;
-      font-family: Balonku;
-      font-size: 1.8vw;
+  
    }
    
    .logo-home{
