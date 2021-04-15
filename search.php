@@ -8,8 +8,9 @@
     if($connection)  {
         $list = $dbAccess->getFile();  
         if ($list) {  
+            $definition = "";
             foreach ($list as $cell) {
-                if(strpos(strtolower($cell['Nome']),strtolower($find)) || strpos(strtolower($cell['Ingredienti']),strtolower($find)) ||  strpos(strtolower($cell['Testo']),strtolower($find)) || strpos(strtolower($cell['Hashtag']),strtolower($find))) {
+                if(stripos($cell['Nome'],$find)!==false || stripos($cell['Ingredienti'],$find)!==false || stripos($cell['Testo'],$find)!==false || stripos($cell['Hashtag'],$find)!==false) {
                     $anteprima = substr($cell['Testo'],0,250) . " ...";
                     $definition .= '<div class="card">';
                         $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
@@ -37,7 +38,7 @@
                     $definition .= '</div>';
                 }
             }
-            if(!$definition)
+            if($definition=="")
                 $definition = '<p>Nessuna ricetta rispetta la ricerca</p>'; 
         }
         else {
