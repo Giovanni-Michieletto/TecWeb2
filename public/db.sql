@@ -43,7 +43,7 @@ La tradizione prevede che le strisce siano 7, 4 sotto e 3 sopra incrociate. Cuoc
 "pastiera, torta, napoli, frolla, ricotta, canditi, grano");
 
 INSERT INTO Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo,Hashtag) VALUES
-("Torta Mousse al caffè","Media","1 ora","./public/img/upload/Mousse.jpg",
+("Torta Mousse al caffè","Media","1 ora","./public/img/upload/Mousse.PNG",
 "Torta Mousse al caffè","225g Cioccolato fondente\n225g Burro\n225g Zucchero(100g semolato e 125 di canna)\n135g Farina\n15g Cacao\n1 pizzico Sale\n4 uova\nMezzo cucchiaino di liveto\n350ml Latte\n120g Zucchero\n25g Amido di mais\n3 Cucchiai di caffè solubile",
 "Sciogliere il cioccolato con il burro e far raffreddare leggermente. 
 Nel frattempo montare con le fruste le uova con lo zucchero fino a creare un composto chiaro e spumoso.
@@ -57,7 +57,7 @@ Aggiungere la gelatina alla crema intiepidita e farla sciogliere bene. una volta
 Mettere in frigo a solidificare per almeno 3 ore. A piacere prima di servire spolverizzare la superficie con del cacao amaro.","torta, mousse, caffè, estiva");
 
 INSERT INTO Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo,Hashtag) VALUES
-("French Toast","Facile","30 minuti","./public/img/upload/Toast.jpg","French Toast","2 Fette di Pan Brioche o Pane in cassetta con la crosta\n25ml Latte\n1 Tuorlo\n1 Pizzico cannella\n1 Pizzico sale(facoltativo)\nBurro q.b.\nSciroppo d'acero\nFrutta fresca\nMarmellata\n",
+("French Toast","Facile","30 minuti","./public/img/upload/Toast.PNG","French Toast","2 Fette di Pan Brioche o Pane in cassetta con la crosta\n25ml Latte\n1 Tuorlo\n1 Pizzico cannella\n1 Pizzico sale(facoltativo)\nBurro q.b.\nSciroppo d'acero\nFrutta fresca\nMarmellata\n",
 "In una ciotola unire il tuorlo, il latte, la cannella e a piacere il sale. 
 In un pentolino mettere a sciogliere una noce di burro. 
 Immergere le fette di pane nel composto di latte e uovo, da entrambi i lati, e metterle sulla padella calda. 
@@ -66,7 +66,7 @@ Servire con frutta fresca e sciroppo d'acero o con qualsiasi cosa vogliate.
 Buona colazione alternativa, e un po’ americana.", "francese, colazione, toast, frutta, veloce, salutare");
 
 INSERT INTO Ricette(Nome,Difficolta,Tempo,Immagine,AltImmagine,Ingredienti,Testo,Hashtag) VALUES
-("Castagnole di carnevale","Facile","1 ora","./public/img/upload/Castagnole.jpg","Castagnole","40g Brurro\n50g Zucchero\n2 Uova\n200g Farina\n8g Lievito\nScorza di arancia e/o limone\n1 Cucchiaio di grappa o rum\n1 Pizzico di sale\nOlio di semi per friggere\n",
+("Castagnole di carnevale","Facile","1 ora","./public/img/upload/Castagnole.PNG","Castagnole","40g Brurro\n50g Zucchero\n2 Uova\n200g Farina\n8g Lievito\nScorza di arancia e/o limone\n1 Cucchiaio di grappa o rum\n1 Pizzico di sale\nOlio di semi per friggere\n",
 "In una ciotola lavorare il burro morbido con lo zucchero fino ad ottenere un composto spumoso. 
 Aggiungere le uova, il liquore e la scorza di limone o arancia e mescolare bene. 
 Unte quindi la farina, il lievito e il pizzico di sale e lavorare il composto prima con un cucchiaio in legno poi con le mani. 

@@ -12,7 +12,7 @@
             foreach ($list as $cell) {
                 if(strpos(strtolower($cell['Nome']),strtolower($find)) || strpos(strtolower($cell['Ingredienti']),strtolower($find)) ||  strpos(strtolower($cell['Testo']),strtolower($find)) || strpos(strtolower($cell['Hashtag']),strtolower($find))){
                     $anteprima = substr($cell['Testo'],0,250) . " ...";
-                    $definition = '<div class="card">';
+                    $definition .= '<div class="card">';
                         $definition .= '<a href="singolo.php?ID='.$cell['ID'].'">';
                             $definition .=  '<img src="'.$cell['Immagine'].'" alt="'.$cell['AltImmagine'].'">';
                             $definition .= '<div class="card-info-container">';
