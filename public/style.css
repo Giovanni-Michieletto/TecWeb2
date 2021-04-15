@@ -989,7 +989,10 @@ justify-content: center;
    .image-container{
       grid-template-columns: auto auto auto;
    }
-   
+   .esempio img{
+      width: 14em;
+      height: 11em;
+   }
    .card img{
       max-width: none;
    }
