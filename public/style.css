@@ -48,6 +48,19 @@ body::-webkit-scrollbar-track{
 	min-height:10px; */
    height: 20%;
    min-height: 2em;
+} 
+.welcome{ 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   margin-bottom: 1em;
+}
+
+.welcome p{
+   margin-left: 4em;
+   margin-right: 5em;
 }
 .padding-2{
    padding: 2em 0;
