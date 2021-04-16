@@ -36,6 +36,7 @@
             $definition .= '<p>'.$cell['Testo'].'</p>';
         $definition .= '</div>';
         $page = str_replace("<p>Errore di caricamento</p>", $definition, $page); 
+        $page = str_replace("Ricetta", $cell['Nome'], $page); 
         }
     echo $page;
 ?>
