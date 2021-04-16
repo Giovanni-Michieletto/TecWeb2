@@ -51,7 +51,7 @@
                             $page = str_replace('valueIngredienti',$Ingredienti,$page);
                             $page = str_replace('valueTesto',$Testo,$page);
                             $page = str_replace('valueHashtag',$Hashtag,$page);
-                            $page = str_replace('admin.php','modify.php?ID='.$ID,$page);
+                            $page = str_replace('action','modify.php?ID='.$ID,$page);
                             echo $page;
                             break;
                         }
@@ -71,6 +71,7 @@
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
                 $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
+                $page = str_replace('action','admin.php',$page);
             }
             else {
                 $page = str_replace("Errore","Errore nel caricamento",$page);
@@ -88,7 +89,7 @@
                 $page = str_replace('valueIngredienti',$ricetta['Ingredienti'],$page);
                 $page = str_replace('valueTesto',$ricetta['Testo'],$page);
                 $page = str_replace('valueHashtag',$ricetta['Hashtag'],$page);
-                $page = str_replace('admin.php','modify.php?ID='.$ID,$page);
+                $page = str_replace('action','modify.php?ID='.$ID,$page);
                 echo $page;
             }
         }
