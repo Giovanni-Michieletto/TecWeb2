@@ -346,14 +346,13 @@ input[type=text], input[type=password] {
    /* grid-template-columns: auto auto  auto; */
 }
 
-.article-chef {
-   padding: 0 1.5em;
+.infermiera-container {
+   /* padding: 0 1.5em; */
+   display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
-.article-chef img {
-   float: left;
-   width: 10%;
-   margin: 0.7em 0.5em;
-}
+
 
 #logo-footer {
    width: 25%;
@@ -709,6 +708,17 @@ justify-content: center;
    .tempo p{
       padding:0 0 0 0.2em;
    }
+   .infermiera-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .infermiera-container img{
+      width: 10em;
+
+   }
+
+   
    /* .info{
       display: flex;
       justify-content: space-between;
@@ -923,6 +933,18 @@ justify-content: center;
    .tempo{
       margin-right: 1em;
    }
+   .infermiera-container{
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .infermiera-container img {
+      width: 10em;
+      margin: 0.7em 0.5em;
+   }
+   .right{
+      float: right;
+   }
+
    .option-admin{
       flex-direction: column;
    }
@@ -946,7 +968,7 @@ justify-content: center;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-}
+   }
    .contatti h2{
       padding: 0.5em;
       font-size: 1.7em;
