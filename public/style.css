@@ -149,7 +149,7 @@ p{
 
 .background{
    background-image: url(./img/background1.jpg);
-   background-size: 22%;
+   
    min-height: 42vh;
 }
 .container{
@@ -560,7 +560,10 @@ justify-content: center;
    .header{
       justify-content: center;
    }
-  
+   
+   .background{
+      background-size: 65%;
+   }
    
    .title img{
       width: 15%;
@@ -818,7 +821,9 @@ justify-content: center;
       
    }
    
-
+   .background{
+      background-size: 45%;
+   }
    .textbutton{
       flex-direction: row;
       justify-content: center;
@@ -999,6 +1004,9 @@ justify-content: center;
 /* ============DESKTOP========== */
 /* ============================ */
 @media screen and (min-width:900px){
+   .background{
+      background-size: 22%;
+   }
    .menu{
       grid-template-columns: auto auto auto auto;
    }
