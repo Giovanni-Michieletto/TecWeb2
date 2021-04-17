@@ -438,6 +438,7 @@ footer a {
 	-ms-border-radius: 13px;
 	-o-border-radius: 13px;
 }
+
 #title{
 	display: flex;
 	/* flex-direction: column; */
@@ -465,11 +466,11 @@ footer a {
    padding: 1em;
 }
 #ingredienti h2{
-   color: blue;
+   color: darksalmon;
    padding-bottom: 1em;
 }
 #ricetta h2{
-   color: blue;
+   color: darksalmon;
    padding: 1em;
 }
 .text{
@@ -683,7 +684,7 @@ justify-content: center;
    }
    .card-info p{
       padding: 0;
-      margin:0 0.6em 1em 0.6em;
+      margin:0 0.6em 0.5em 0.6em;
       display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
@@ -873,7 +874,8 @@ justify-content: center;
 
    .card{
       display: flex;
-      width: 80%;
+      width: 90%;
+      max-width: 960px;
       height: 100%;
       border: 2px solid #ccc;
       border-radius: 10px;
@@ -896,7 +898,7 @@ justify-content: center;
    }
    .card-img{
       display: flex;
-      width: 30%;
+      width: 45%;
       max-width: 200px;
    }
    .card img{
@@ -916,6 +918,7 @@ justify-content: center;
    }
    .card-title{
       margin-top: 1em;
+      margin-bottom: 0.7em;
       display: flex;
       align-items: center;
    }
