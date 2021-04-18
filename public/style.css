@@ -332,11 +332,15 @@ p{
    align-items: center;
    justify-content: center;
 }
+#form fieldset{
+   display: flex;
+   align-items: flex-start;
+}
 fieldset{
    width: 80%;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
+   align-items: center;
    flex-direction: column;
    border: none;
    margin: 0 0 0.5em 0;
