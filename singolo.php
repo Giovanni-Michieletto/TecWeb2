@@ -12,10 +12,10 @@
                 $definition .= '<h1>'.$cell['Nome'].'</h1>';
             $definition .= '</div>';
             $definition .= '<div class="card-footer">';
-                $definition .= '<div class="info">';
+                $definition .= '<div class="info size">';
                     $definition .= '<p>Difficoltà: '.$cell['Difficolta'].'</p>';
                 $definition .= '</div>';
-                $definition .= '<div class="tempo">';
+                $definition .= '<div class="tempo size">';
                     $definition .= '<i class="far fa-clock"></i>';
                     $definition .= '<p>'.$cell['Tempo'].'</p>';
                 $definition .= '</div>';

@@ -42,7 +42,10 @@ body::-webkit-scrollbar-track{
 ::-webkit-progress-bar{
    width: 0;
 }
-
+.size{
+   padding: 0.5em;
+   font-size: 1.3em;
+}
 .spacer-top{
 	/* height:25%;
 	min-height:10px; */
@@ -209,7 +212,7 @@ p{
    justify-content: space-evenly;
 }
 
-.links2{
+.links2 a{
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -445,6 +448,7 @@ footer a {
 	display: flex;
 	/* flex-direction: column; */
    justify-content: center;
+   padding: 1em;
 }
 #image{
    width: 100%;
@@ -538,6 +542,11 @@ justify-content: center;
 /* ============================ */
 
 @media screen and (min-width:300px){
+   .container a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
    /* .links {
       display: grid;
       grid-template-columns: auto auto ;
@@ -557,10 +566,16 @@ justify-content: center;
       font-weight: bold;
       font-size: 1.1em;
    } */
+   .welcome h2{
+      padding: 1em;
+   }
    .header{
       justify-content: center;
+      height: 7vh;
    }
-   
+   .header h1{
+      font-size: 6vw;
+   }
    .background{
       background-size: 65%;
    }
