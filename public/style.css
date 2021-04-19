@@ -15,34 +15,44 @@ body{
 	height: 100%;
 	
 }
-body::-webkit-scrollbar {
-	height: 5px;
-   width: 5px;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-/* body::-webkit-scrollbar {
-	height: 4px;
-	width: 4px;
-	} */
-	body::-webkit-scrollbar-thumb {
-	background:#01B8BD;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-   box-shadow: inset 0px 0px #01B8BD;
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
 }
-body::-webkit-scrollbar-corner {
-	background:#035659;
+::-webkit-scrollbar-thumb {
+  background: #d6aeae;
+  border: 0px none #fcfcfc;
+  border-radius: 20px;
 }
-body::-webkit-scrollbar-track{
-   background: #fff;
-   border: 0;
-   /* box-shadow: inset 7px 10px 12px ; */
+::-webkit-scrollbar-thumb:hover {
+  background: #bf9c9c;
 }
-::-webkit-progress-bar{
-   width: 0;
+::-webkit-scrollbar-thumb:active {
+  background: #e1a8a8;
+}
+::-webkit-scrollbar-track {
+  background: #fffafa;
+  border: 0px solid #fcfdfd;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #fdf2f2;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
+.size{
+   padding: 0.5em;
+   font-size: 1.3em;
+}
 .spacer-top{
 	/* height:25%;
 	min-height:10px; */
@@ -76,9 +86,23 @@ body::-webkit-scrollbar-track{
 
 .header{
    width: 100%;
+   min-height: 6vh;
    background-color: antiquewhite;
    display: flex;
    align-items: center;
+   justify-content: center;
+}
+.header h1{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   color: #a20000;
+   letter-spacing: 0.3em;
+   font-family: Balonku;
+   font-weight: bold;
+   font-size: 5vw;
+   padding: 0.5em;
 }
 .align{
    display: flex;
@@ -89,16 +113,10 @@ p{
    font-size: 1.1em;
 }
 #percorso{
-   position: absolute;
-   left: -9999px;
-   /* font-size: 1.1em;
-	width: 100%;
-   padding: 2em 0;
+   margin-left: 3em;   
+   font-size: 1.1em;
 	height: 3em;
-	display: flex;
-   flex-direction: row;
-	align-items: center;
-	color: rgb(104, 5, 5); */
+	color: #a20000;
 }
 
 /* .menu{
@@ -141,12 +159,12 @@ p{
 
 .background{
    background-image: url(./img/background1.jpg);
-   background-size: 22%;
-   min-height: 80vh;
+   
+   min-height: 42vh;
 }
 .container{
    height: 100%;
-   min-height: 35em; /*da togliere qunado si riepirà per bene la pagina*/
+   min-height: 42vh; /*da togliere qunado si riepirà per bene la pagina*/
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -201,7 +219,7 @@ p{
    justify-content: space-evenly;
 }
 
-.links2{
+.links2 a{
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -264,6 +282,7 @@ p{
    display: grid;
    width: 100%;
    justify-content: space-evenly;
+   margin-bottom: 1em;
 }
 
 .logo-home{
@@ -286,7 +305,7 @@ p{
 }
 .title-amministration img{
 	width: auto;
-    height: 40px;
+   height: 40px;
 }
 .title-amministration label{
 	font-size: 1.4em;
@@ -313,7 +332,12 @@ p{
    align-items: center;
    justify-content: center;
 }
+#form fieldset{
+   display: flex;
+   align-items: flex-start;
+}
 fieldset{
+   width: 80%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -321,17 +345,26 @@ fieldset{
    border: none;
    margin: 0 0 0.5em 0;
 }
-input[type=text], input[type=password] {
-	width: 100%;
-	min-width: 13em;
-	font-family: sans-serif;
-	padding: 12px 20px;
-	/* margin: 0.8em 0; */
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	font-size: 1.2em;
+input[type=text], input[type=password], textarea {
+   width: 100%;
+   min-width: 13em;
+   font-family: sans-serif;
+   padding: 12px 20px;
+   /*margin: 0.8em 0;
+   */display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 1.2em;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+label{
+   font-size: 1.4em;
+   padding: 0.5em 0;
 }
 .conferma{
    font-size: 1.2em;
@@ -351,11 +384,13 @@ input[type=text], input[type=password] {
    /* grid-template-columns: auto auto  auto; */
 }
 
-.article-chef img {
-   float: left;
-   width: 10%;
-   margin: 0.7em 0.5em;
+.infermiera-container {
+   /* padding: 0 1.5em; */
+   display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
+
 
 #logo-footer {
    width: 25%;
@@ -416,9 +451,9 @@ footer a {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 	border: 2px solid rgb(148, 148, 148);
-	padding: 1.5em;
+	/* padding: 1.5em; */
 	border-radius: 13px;
 	/* background-color: blanchedalmond; */
    background-color: white;
@@ -427,39 +462,42 @@ footer a {
 	-ms-border-radius: 13px;
 	-o-border-radius: 13px;
 }
+.content h1{
+   color: darksalmon;
+}
 #title{
 	display: flex;
 	/* flex-direction: column; */
    justify-content: center;
+   padding: 1em;
 }
 #image{
-    width: 100%;
-    /*height: 20em;
-    */justify-content: center;
-    vertical-align: middle;
-    display: flex;
-    margin: 4% 0%;
-    align-items: center;
-    
+   width: 100%;
+   /*height: 20em;
+   */justify-content: center;
+   vertical-align: middle;
+   display: flex;
+   margin: 4% 0%;
+   align-items: center;
 }
 #image img{
 	width: 86%;
 	max-width: 500px;
    border-radius:5% ;
-    -webkit-border-radius:5% ;
-    -moz-border-radius:5% ;
-    -ms-border-radius:5% ;
-    -o-border-radius:5% ;
+   -webkit-border-radius:5% ;
+   -moz-border-radius:5% ;
+   -ms-border-radius:5% ;
+   -o-border-radius:5% ;
 }
 #ingredienti{
    padding: 1em;
 }
 #ingredienti h2{
-   color: blue;
+   color: darksalmon;
    padding-bottom: 1em;
 }
 #ricetta h2{
-   color: blue;
+   color: darksalmon;
    padding: 1em;
 }
 .text{
@@ -525,6 +563,11 @@ justify-content: center;
 /* ============================ */
 
 @media screen and (min-width:300px){
+   .container a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
    /* .links {
       display: grid;
       grid-template-columns: auto auto ;
@@ -544,15 +587,20 @@ justify-content: center;
       font-weight: bold;
       font-size: 1.1em;
    } */
+   .welcome h2{
+      padding: 1em;
+   }
    .header{
       justify-content: center;
+      height: 7vh;
    }
    .header h1{
-      display: none;
+      font-size: 6vw;
    }
-   .header img{
-      width: 40%;
+   .background{
+      background-size: 65%;
    }
+   
    .title img{
       width: 15%;
       margin-left: 2%;
@@ -566,6 +614,9 @@ justify-content: center;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+   }
+   input[type="file"]{
+      margin: 1em 0;
    }
    input[type="submit"]{
       margin-top: 1em;
@@ -600,9 +651,7 @@ justify-content: center;
    .links2 a img , .not-link img{
       display: none;
    }
-   .welcome h2{
-     width: 80%;
-   }
+  
    .logo-home{
       display: none;
    }
@@ -640,6 +689,7 @@ justify-content: center;
    }
    
    .card a{
+      flex-direction: column;
       text-decoration: none;
       color: black;
    }
@@ -679,7 +729,7 @@ justify-content: center;
    }
    .card-info p{
       padding: 0;
-      margin:0 0.6em 1em 0.6em;
+      margin:0 0.6em 0.5em 0.6em;
       display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
@@ -714,6 +764,17 @@ justify-content: center;
    .tempo p{
       padding:0 0 0 0.2em;
    }
+   .infermiera-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .infermiera-container img{
+      width: 10em;
+
+   }
+
+   
    /* .info{
       display: flex;
       justify-content: space-between;
@@ -751,7 +812,11 @@ justify-content: center;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}  
+   } 
+   .button-conferma{
+      display: flex;
+      align-items: center;
+   }
    button:hover, input[type="submit"]:hover{
       box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    }
@@ -794,23 +859,16 @@ justify-content: center;
 @media screen and (min-width:600px){
    .header{
       justify-content: space-between;
+      height: 9vh;
    }
    .header img{
       width: 12%;
       
    }
-   .header h1{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      color: #a20000;
-      letter-spacing: 0.3em;
-      font-family: Balonku;
-      font-weight: bold;
-      font-size: 5vw;
+   
+   .background{
+      background-size: 45%;
    }
-
    .textbutton{
       flex-direction: row;
       justify-content: center;
@@ -868,7 +926,8 @@ justify-content: center;
 
    .card{
       display: flex;
-      width: 80%;
+      width: 90%;
+      max-width: 960px;
       height: 100%;
       border: 2px solid #ccc;
       border-radius: 10px;
@@ -888,10 +947,11 @@ justify-content: center;
       display: flex;
       text-decoration: none;
       color: black;
+      flex-direction: row;
    }
    .card-img{
       display: flex;
-      width: 30%;
+      width: 45%;
       max-width: 200px;
    }
    .card img{
@@ -905,12 +965,13 @@ justify-content: center;
       -o-border-radius: 10px 0 0 10px;
    }
    .card-info-container{
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-direction: column;
    }
    .card-title{
       margin-top: 1em;
+      margin-bottom: 0.7em;
       display: flex;
       align-items: center;
    }
@@ -928,6 +989,18 @@ justify-content: center;
    .tempo{
       margin-right: 1em;
    }
+   .infermiera-container{
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .infermiera-container img {
+      width: 10em;
+      margin: 0.7em 0.5em;
+   }
+   .right{
+      float: right;
+   }
+
    .option-admin{
       flex-direction: column;
    }
@@ -951,7 +1024,7 @@ justify-content: center;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-}
+   }
    .contatti h2{
       padding: 0.5em;
       font-size: 1.7em;
@@ -977,6 +1050,15 @@ justify-content: center;
 /* ============DESKTOP========== */
 /* ============================ */
 @media screen and (min-width:900px){
+   .header{
+      height: 14vh;
+   }
+   .header h1{
+      font-size: 5vw;
+   }
+   .background{
+      background-size: 22%;
+   }
    .menu{
       grid-template-columns: auto auto auto auto;
    }

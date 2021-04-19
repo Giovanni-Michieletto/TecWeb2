@@ -1,5 +1,5 @@
 <?php
     session_start();
     $_SESSION['logged']=false;
-    header("Location: index.html",TRUE);
+    header("Location: index.php",TRUE);
 ?>
