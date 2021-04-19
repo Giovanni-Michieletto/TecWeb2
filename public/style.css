@@ -511,7 +511,7 @@ justify-content: center;
 .nuova-ricetta a{
    text-decoration: none;
    color: white;
-   background-color: lightcoral;
+   background-color:#A20000;
    padding: 0.5em 1.5em;
    margin: 1em 0;
    border-radius: 5px;
@@ -528,7 +528,7 @@ justify-content: center;
    display: flex;
    /* align-items: center; */
    justify-content: center;
-   color:darksalmon;
+   color:black;
 }
 
 .foto-martina{
@@ -800,7 +800,7 @@ justify-content: center;
       margin: 0.3em 0;
    }
    button, input[type="submit"]{
-    background-color: lightcoral;
+      background-color: #A20000;
     /* padding: 0.5em 1.5em; */
     color: white;
     height: 3em;
