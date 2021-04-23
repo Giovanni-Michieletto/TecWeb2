@@ -37,25 +37,30 @@
                     $page = str_replace('valueIngredienti',$Ingredienti,$page);
                     $page = str_replace('valueTesto',$Testo,$page);
                     $page = str_replace('valueHashtag',$Hashtag,$page);
+                    $page = str_replace('valueAction','insert.php',$page);
                     echo $page;
                     break;
                 }
             }
         }
-        move_uploaded_file($_FILES['Immagine']['tmp_name'],$ImmagineUpload);
-        $insertion = $dbAccess->insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag);
-        if($insertion) {
-            $page = str_replace("Errore","Inserimento andato a buon fine",$page);
-            $page = str_replace('valueNome"',$Nome.'" readonly ',$page);
-            $page = str_replace('valueDifficoltà"',$Difficolta.'" readonly ',$page);
-            $page = str_replace('valueTempo"',$Tempo.'" readonly ',$page);
-            $page = str_replace('valueAltImmagine"',$AltImmagine.'" readonly ',$page);
-            $page = str_replace('>valueIngredienti',' readonly>'.$Ingredienti.'" readonly ',$page);
-            $page = str_replace('>valueTesto',' readonly>'.$Testo,$page);
-            $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
-            $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
-            $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
-            $page = str_replace('insert.php','admin.php',$page);
+        if(move_uploaded_file($_FILES['Immagine']['tmp_name'],$ImmagineUpload)) {
+            $insertion = $dbAccess->insertFile($Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag);
+            if($insertion) {
+                $page = str_replace("Errore","Inserimento andato a buon fine",$page);
+                $page = str_replace('valueNome"',$Nome.'" readonly ',$page);
+                $page = str_replace('valueDifficoltà"',$Difficolta.'" readonly ',$page);
+                $page = str_replace('valueTempo"',$Tempo.'" readonly ',$page);
+                $page = str_replace('valueAltImmagine"',$AltImmagine.'" readonly ',$page);
+                $page = str_replace('>valueIngredienti',' readonly>'.$Ingredienti.'" readonly ',$page);
+                $page = str_replace('>valueTesto',' readonly>'.$Testo,$page);
+                $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
+                $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
+                $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
+                $page = str_replace('valueAction','admin.php',$page);
+            }
+            else {
+                $page = str_replace("Errore","Errore nel caricamento",$page);
+            } 
         }
         else {
             $page = str_replace("Errore","Errore nel caricamento",$page);

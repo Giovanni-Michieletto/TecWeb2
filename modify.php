@@ -15,7 +15,7 @@
     $connection = $dbAccess->openDBConnection();
     if($connection) {    
         $ricetta = $dbAccess->getFileID($ID);
-        if($_POST['Nome']) {
+        if($_POST) {
             $Nome = $_POST['Nome'];
             $Difficolta = $_POST['Difficolta'];
             $Tempo = $_POST['Tempo'];
@@ -51,7 +51,8 @@
                             $page = str_replace('valueIngredienti',$Ingredienti,$page);
                             $page = str_replace('valueTesto',$Testo,$page);
                             $page = str_replace('valueHashtag',$Hashtag,$page);
-                            $page = str_replace('action','modify.php?ID='.$ID,$page);
+                            $page = str_replace('Submit','Modifica',$page);
+                            $page = str_replace('valueAction','modify.php?ID='.$ID,$page);
                             echo $page;
                             break;
                         }
@@ -61,7 +62,7 @@
 
             $update = $dbAccess->updateFile($ID,$Nome,$Difficolta,$Tempo,$Immagine,$AltImmagine,$Ingredienti,$Testo,$Hashtag);
             if($update) {
-                $page = str_replace("Errore","Inserimento andato a buon fine",$page);
+                $page = str_replace("Errore","Modifica andata a buon fine",$page);
                 $page = str_replace('valueNome"',$Nome.'" readonly ',$page);
                 $page = str_replace('valueDifficoltà"',$Difficolta.'" readonly ',$page);
                 $page = str_replace('valueTempo"',$Tempo.'" readonly ',$page);
@@ -71,7 +72,7 @@
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
                 $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>', '<img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
-                $page = str_replace('action','admin.php',$page);
+                $page = str_replace('valueAction','admin.php',$page);
             }
             else {
                 $page = str_replace("Errore","Errore nel caricamento",$page);
@@ -89,7 +90,8 @@
                 $page = str_replace('valueIngredienti',$ricetta['Ingredienti'],$page);
                 $page = str_replace('valueTesto',$ricetta['Testo'],$page);
                 $page = str_replace('valueHashtag',$ricetta['Hashtag'],$page);
-                $page = str_replace('action','modify.php?ID='.$ID,$page);
+                $page = str_replace('Submit','Modifica',$page);
+                $page = str_replace('valueAction','modify.php?ID='.$ID,$page);
                 echo $page;
             }
         }

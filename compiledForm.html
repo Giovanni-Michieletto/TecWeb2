@@ -61,7 +61,7 @@
             </div>
             <div class="card-container">
                 <strong>Errore</strong>
-                <form enctype="multipart/form-data" id="form" method="post" action="action">
+                <form enctype="multipart/form-data" id="form" method="post" action="valueAction">
                     <fieldset>
                         <label for="Nome">Nome*: </label>
                         <input type="text" id="Nome" name="Nome" placeholder="Nome" title="Nome della ricetta" pattern="[a-zA-Z0-9]+.*" size="150" value="valueNome" required/>  
@@ -80,8 +80,8 @@
                             <input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" size="50" required/>
                         </div>
                         <div>
-                            <label for="AltImmagine"><abbr title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine">Descrizione immagine*:</abbr></label>
-                            <input type="text" id="AltImmagine" name="AltImmagine" placeholder="AltImmagine" pattern="[a-zA-Z0-9]+.*" size="150" value="valueAltImmagine" required/>
+                            <label for="AltImmagine">Descrizione immagine*:</label>
+                            <input type="text" id="AltImmagine" name="AltImmagine" title="Descrizione necessaria per permettere agli utenti non vedenti di percepire il contesto dell'Immagine" placeholder="AltImmagine" pattern="[a-zA-Z0-9]+.*" size="150" value="valueAltImmagine" required/>
                         </div>
                     </fieldset>
                     <fieldset>

@@ -9,7 +9,8 @@
     $connection = $dbAccess->openDBConnection(); 
     if($connection)  {
         $list = $dbAccess->getFile();  
-        if ($list) {        
+        if ($list) {   
+            $definition = "";     
             foreach ($list as $cell) {
                 $anteprima = substr($cell['Testo'],0,250) . " ...";
                 $definition .= '<div class="card">';
