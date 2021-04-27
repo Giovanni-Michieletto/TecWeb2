@@ -627,14 +627,13 @@ justify-content: center;
       margin-top: 1em;
    }
    .menu{
-      /* grid-template-columns: auto auto auto; */
       background-color: blanchedalmond;
       flex-wrap: wrap;
       grid-template-columns: auto auto;
    }
-   /* .menu{
-      
-   } */
+   .hidden {
+      display: none;
+   }
    .not-link{
       min-width: 150px;
    }
@@ -656,7 +655,6 @@ justify-content: center;
    .links2 a img , .not-link img{
       display: none;
    }
-  
    .logo-home{
       display: none;
    }
@@ -673,7 +671,7 @@ justify-content: center;
       -ms-border-radius: 5%;
       -o-border-radius: 5%;
    }
-    .card-container{
+   .card-container{
       grid-template-columns: auto;
       justify-content: center;
    }

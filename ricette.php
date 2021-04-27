@@ -34,6 +34,9 @@
                         $definition .= '</div>';
                     $definition .= '</a>';
                 $definition .= '</div>';
+                $definition .= '<div class="hidden">';
+                    $definition .= '<a href="admin.php">Torna su</a>';
+                $definition .= '</div>';
             }
         }
         else {

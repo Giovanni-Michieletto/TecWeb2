@@ -7,6 +7,7 @@
     $ID = $_GET['ID'];
     $page = file_get_contents('compiledForm.html');
     $page = str_replace("Ricetta","Eliminazione ricetta",$page);
+    $page = str_replace("compiledForm.html","delete.php?ID=".$ID,$page);
     $dbAccess = new DBAccess();          
     $connection = $dbAccess->openDBConnection(); 
     if($connection)  {

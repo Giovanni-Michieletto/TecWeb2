@@ -10,6 +10,7 @@
     $ID = $_GET['ID'];
     $page = file_get_contents('compiledForm.html');
     $page = str_replace("Ricetta","Modifica Ricetta",$page);
+    $page = str_replace("compiledForm.html","modify.php?ID=".$ID,$page);
 
     $dbAccess = new DBAccess();
     $connection = $dbAccess->openDBConnection();
@@ -36,7 +37,6 @@
             else if($ricetta){
                 $Immagine = $ricetta['Immagine'];
             }
-
             $list = $dbAccess->getFile();
             if($list) {
                 foreach ($list as $cell) {

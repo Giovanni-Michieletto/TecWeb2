@@ -43,6 +43,9 @@
                         $definition .= '</form>';
                     $definition .='</div>';
                 $definition .= '</div>';
+                $definition .= '<div class="hidden">';
+                    $definition .= '<a href="admin.php">Torna su</a>';
+                $definition .= '</div>';
             }
         }
         else {

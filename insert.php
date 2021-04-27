@@ -15,7 +15,7 @@
     $Testo = $_POST['Testo'];
     $Hashtag = $_POST['Hashtag'];
     $page = file_get_contents('compiledForm.html');
-
+    $page = str_replace('<div class="hidden"><a href="compiledForm.html">Torna su</a></div>',"",$page);
     $dbAccess = new DBAccess();
     $connection = $dbAccess->openDBConnection();
     if($connection) {    

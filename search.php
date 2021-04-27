@@ -1,7 +1,7 @@
 <?php
     require_once "dbConnection.php";
     session_start();
-    $find = $_POST['cerca'];
+    $find = $_GET['cerca'];
     $page = file_get_contents('search.html');
     $dbAccess = new DBAccess();          
     $connection = $dbAccess->openDBConnection();
@@ -35,6 +35,9 @@
                                 $definition .= '</div>';
                             $definition .= '</div>';
                         $definition .= '</a>';
+                    $definition .= '</div>';
+                    $definition .= '<div class="hidden">';
+                        $definition .= '<a href="search.php?cerca='.$find.'">Torna su</a>';
                     $definition .= '</div>';
                 }
             }

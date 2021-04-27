@@ -32,9 +32,15 @@
                 }
                 $definition .= '</ul>';
             $definition .= '</div>';
+            $definition .= '<div class="hidden">';
+                $definition .= '<a href="admin.php">Torna su</a>';
+            $definition .= '</div>';
             $definition .= '<div id="ricetta" class="text">';
                 $definition .= '<h2>Ricetta</h2>';
                 $definition .= '<p>'.$cell['Testo'].'</p>';
+            $definition .= '</div>';
+            $definition .= '<div class="hidden">';
+                $definition .= '<a href="admin.php">Torna su</a>';
             $definition .= '</div>';
 
         $page = str_replace("<p>Errore di caricamento</p>", $definition, $page); 
