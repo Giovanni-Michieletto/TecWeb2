@@ -31,7 +31,6 @@ var inputLoginAdmin = [{
 }  ]
 
 function validateForm (){
-alert("vugi");
 eliminaErrori();
 var form, checks
 var isLogin = document.getElementById('login') !== null;
