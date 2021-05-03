@@ -71,7 +71,7 @@ body{
    font-size: 1.3em;
 }
 .welcome p{
-  width: 80%;
+   width: 80%;
 }
 .padding-2{
    padding: 2em 0;
@@ -412,20 +412,20 @@ label{
 }
 #TornaSu {
 	background-color: #A20000;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	position: fixed;
-	bottom: 3%;
-	right: 3%;
+	bottom: 9%;
+	right: 11%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: white; 
 	line-height: 1.5rem;
 	cursor: pointer;
@@ -525,16 +525,31 @@ justify-content: center;
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
 }
-/* .chef{
-   display: flex;
 
-} */
-.chef h2, .chef h3{
+.chef {
+   text-align: center;
+}
+.article-chef {
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.article-chef p{
+   text-align: left;
+}
+/*.article-chef{
    display: flex;
-   /* align-items: center; */
    justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   margin-bottom: 1em;
+}*/
+.article-chef h2, .article-chef h3{
    color:black;
 }
+/*.article-chef p {
+   width: 80%;
+}*/
 
 .foto-martina{
    display: flex;
