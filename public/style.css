@@ -533,7 +533,7 @@ justify-content: center;
    margin-right: 10%;
 }
 .article-chef p{
-   text-align: left;
+   text-align: justify;
 }
 /*.article-chef{
    display: flex;
