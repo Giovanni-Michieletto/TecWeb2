@@ -60,10 +60,26 @@
             }
             else {
                 $page = str_replace("Errore","Errore nel caricamento",$page);
+                $page = str_replace('valueNome',$Nome,$page);
+                $page = str_replace('valueDifficoltà',$Difficolta,$page);
+                $page = str_replace('valueTempo',$Tempo,$page);
+                $page = str_replace('valueAltImmagine',$AltImmagine,$page);
+                $page = str_replace('valueIngredienti',$Ingredienti,$page);
+                $page = str_replace('valueTesto',$Testo,$page);
+                $page = str_replace('valueHashtag',$Hashtag,$page);
+                $page = str_replace('valueAction','insert.php',$page);
             } 
         }
         else {
             $page = str_replace("Errore","Errore nel caricamento",$page);
+            $page = str_replace('valueNome',$Nome,$page);
+            $page = str_replace('valueDifficoltà',$Difficolta,$page);
+            $page = str_replace('valueTempo',$Tempo,$page);
+            $page = str_replace('valueAltImmagine',$AltImmagine,$page);
+            $page = str_replace('valueIngredienti',$Ingredienti,$page);
+            $page = str_replace('valueTesto',$Testo,$page);
+            $page = str_replace('valueHashtag',$Hashtag,$page);
+            $page = str_replace('valueAction','insert.php',$page);
         } 
         echo $page;
     }  

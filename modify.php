@@ -70,6 +70,7 @@
                 $page = str_replace('>valueIngredienti',' readonly>'.$Ingredienti,$page);
                 $page = str_replace('>valueTesto',' readonly>'.$Testo,$page);
                 $page = str_replace('valueHashtag"',$Hashtag.'" readonly ',$page);
+                $page = str_replace('for="Immagine"','',$page);
                 $page = str_replace('<input type="file" id="Immagine" name="Immagine" accept="image/*" title="Immagine o foto del risultato finale della ricetta" aria-required="true" aria-label="Foto della ricetta"/>', '</br> <img src="'.$Immagine.'" alt="'.$AltImmagine.'">',$page);
                 $page = str_replace('Submit','Torna alla pagina amministrazione',$page);
                 $page = str_replace('valueAction','admin.php',$page);
