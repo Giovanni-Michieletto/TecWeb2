@@ -44,7 +44,7 @@ function mostraErrori(input){
         var error = document.createElement("strong");
         error.className = "error";
         error.setAttribute("role", "alert");
-        error.setAttribute("aria-live", "polite");
+        error.setAttribute("aria-live", "assertive");
         error.appendChild(document.createTextNode(" - " +label.getAttribute("data-error-msg")));
         label.appendChild(error);
     }
