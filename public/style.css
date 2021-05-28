@@ -501,7 +501,10 @@ justify-content: center;
       height: 7vh;
    }
    .spacer-top {
-      display: none;
+      height: 1em;
+      min-height: 1em;
+      margin: 0;
+      padding: 0;
    }
    .menu {
       padding: 0 5em;
