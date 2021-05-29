@@ -319,6 +319,9 @@ input[type=text], input[type=password], textarea {
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
 }
+textarea{
+   resize: none;
+}
 label{
    font-size: 1.4em;
    padding: 0.5em 0;
@@ -1085,6 +1088,9 @@ fieldset img{
       display: flex;
       align-items: center;
       font-weight: bold;
+   }
+   textarea{
+      max-height: 32vh;
    }
    #img_validCode {
       display: none;
