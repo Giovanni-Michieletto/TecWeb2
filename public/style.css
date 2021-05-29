@@ -485,6 +485,10 @@ justify-content: center;
    display: flex;
 justify-content: center;
 }
+
+fieldset img{
+   width: 50%;
+}
 /* ============================ */
 /* ============MOBILE========== */
 /* ============================ */
@@ -535,6 +539,7 @@ justify-content: center;
    input[type="submit"]{
       margin-top: 1em;
    }
+
    .menu{
       background-color: blanchedalmond;
       flex-wrap: wrap;
@@ -860,6 +865,9 @@ justify-content: center;
       justify-content: space-between;
       bottom: 1em;
    }
+   #ricetta p{
+      padding: 0 2em 1.5em 2em;
+   }
    .tempo{
       margin-right: 1em;
    }
@@ -942,6 +950,10 @@ justify-content: center;
    }
    .card img{
       max-width: none;
+   }
+   #TornaSu{
+      bottom: 5%;
+      right: 5%;
    }
 }
 /* ============================ */
@@ -1054,6 +1066,12 @@ justify-content: center;
       flex-direction: row;
       justify-content: space-between;
    }
+   .option-admin{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+   }
+   
    .chef img {
       display: none;
    }
