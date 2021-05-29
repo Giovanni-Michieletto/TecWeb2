@@ -293,6 +293,8 @@ p{
 #form fieldset{
    display: flex;
    align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 fieldset{
    width: 80%;
@@ -320,7 +322,8 @@ input[type=text], input[type=password], textarea {
    -o-border-radius: 5px;
 }
 textarea{
-   resize: none;
+   resize:none;
+   max-height: 45vh;
 }
 label{
    font-size: 1.4em;
@@ -1092,8 +1095,18 @@ fieldset img{
       align-items: center;
       font-weight: bold;
    }
+   #form fieldset{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1em 0;
+   }
+  
    textarea{
-      max-height: 32vh;
+      resize: vertical;
+      margin: 0 0 1.5em 0;
+      
    }
    #img_validCode {
       display: none;
