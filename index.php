@@ -1,6 +1,6 @@
 <?php
     require_once "dbConnection.php";
-    $page = file_get_contents('index.html');
+    $page = file_get_contents('home.html');
     $dbAccess = new DBAccess();
     $connection = $dbAccess->openDBConnection();
     if($connection) {
